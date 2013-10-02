@@ -222,3 +222,84 @@ function pinba_hostname_set($hostname) {
  */
 function pinba_flush($script_name = '', $flags = PINBA_FLUSH_ONLY_STOPPED_TIMERS) {
 }
+
+/**
+ * Set request schema (HTTP/HTTPS/whatever).
+ *
+ * @param string $schema Schema
+ *
+ * @return bool Returns true on success and false on failure.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_schema_set
+ * @since 1.1.0.
+ */
+function pinba_schema_set($schema) {
+}
+
+/**
+ * Set custom server name instead of $_SERVER['SERVER_NAME'] used by default.
+ *
+ * @param string $server_name Custom server name
+ *
+ * @return bool Returns true on success and false on failure.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_server_name_set
+ * @since 1.1.0.
+ */
+function pinba_server_name_set($server_name) {
+}
+
+/**
+ * Set custom request time.
+ *
+ * @param float $request_time
+ *
+ * @return bool Returns true on success and false on failure.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_request_time_set
+ * @since 1.1.0.
+ */
+function pinba_request_time_set($request_time) {
+}
+
+/**
+ * Set/update request tag.
+ *
+ * @param string $tag Custom tag name string
+ * @param string $value Tag value
+ *
+ * @return bool Returns true on success and false on failure.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_tag_set
+ * @since 1.1.0.
+ */
+function pinba_tag_set($tag, $value) {
+}
+
+/**
+ * Get previously set request tag value.
+ *
+ * @return string Returns request tag string.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_tag_get
+ * @since 1.1.0.
+ */
+function pinba_tag_get() {
+}
+
+/**
+ * Delete previously set request tag.
+ *
+ * @param string $tag Custom tag name string
+ *
+ * @return bool Returns true on success and false on failure.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_tag_delete
+ * @since 1.1.0.
+ */
+function pinba_tag_delete($tag) {
+}
+
+/**
+ * Return an array of all previously set request tags.
+ *
+ * @return array Returns array of all previously set request tags
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_tags_get
+ * @since 1.1.0.
+ */
+function pinba_tags_get() {
+}
