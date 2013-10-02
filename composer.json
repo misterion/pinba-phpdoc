@@ -14,7 +14,7 @@
         }
     ],
     "require":{
-        "php":">=5.x.x"
+        "php":">="5.x.x"
     },
     "version": "1.0.0",
     "autoload": {
