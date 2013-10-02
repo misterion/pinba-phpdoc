@@ -1,0 +1,30 @@
+{
+    "name":         "misterion/pinba-phpdoc",
+    "type":         "library",
+    "description":  "@phpdoc extension php pinba for IDE autocomplete",
+    "keywords":     ["pinba", "helper"],
+    "homepage":     "https://github.com/misterion/pinba-phpdoc",
+    "license":      "LGPL3",
+    "authors":[
+        {
+            "name":     "Nikolay Bondarenko",
+            "email":    "misterionkell@gmail.com",
+            "homepage": "http://misterion.ru/",
+            "role":     "Developer"
+        }
+    ],
+    "require":{
+        "php":">=5.x.x"
+    },
+    "version": "1.0.0",
+    "autoload": {
+        "psr-0": {
+            "pinba-phpdoc": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
