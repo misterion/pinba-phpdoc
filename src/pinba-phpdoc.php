@@ -19,6 +19,11 @@ const PINBA_FLUSH_ONLY_STOPPED_TIMERS = 0;
 const PINBA_FLUSH_RESET_DATA = 1;
 
 /**
+ * @since 1.0.0.
+ */
+const PINBA_ONLY_STOPPED_TIMERS = 0;
+
+/**
  * Creates and starts new timer.
  *
  * @param array $tags An array of tags and their values in the form of "tag" => "value". Cannot contain numeric indexes for obvious reasons.
@@ -152,6 +157,19 @@ function pinba_timer_get_info($timer) {
  * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_timers_stop
  */
 function pinba_timers_stop() {
+}
+
+/**
+ * Get all timers info.
+ *
+ * @param int $flags Is an optional argument added in version 1.0.0.
+ * Possible values (it's a bitmask, so you can add the constants) is a PINBA_ONLY_STOPPED_TIMERS.
+ *
+ * @return array Array with all timers data.
+ * @link https://github.com/tony2001/pinba_engine/wiki/PHP-extension#pinba_timers_get
+ * @since 1.1.0
+ */
+function pinba_timers_get($flags = PINBA_ONLY_STOPPED_TIMERS) {
 }
 
 /**
