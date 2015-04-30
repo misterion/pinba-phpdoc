@@ -20,7 +20,7 @@ After that, your IDE, when IDE will display a hint on each pinba methods you wri
         "minimum-stability": "dev"
     }
 
- * Or direct download [phpredis-phpdoc](https://github.com/misterion/pinba-phpdoc/tarball/master)
+ * Or direct download [pinba-phpdoc](https://github.com/misterion/pinba-phpdoc/tarball/master)
 
 ### Setup in IDE PhpStorm
 
