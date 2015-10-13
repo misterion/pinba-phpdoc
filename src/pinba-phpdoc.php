@@ -55,7 +55,7 @@ function pinba_timer_stop($timer) {
  * Creates new timer. This timer is already stopped and have specified time value.
  *
  * @param array $tags An array of tags and their values in the form of "tag" => "value". Cannot contain numeric indexes for obvious reasons.
- * @param integer $value Timer value for new timer.
+ * @param float $value Timer value for new timer.
  * @param array $data Optional array with user data, not sent to the server.
  *
  * @return resource Always returns new timer resource.
